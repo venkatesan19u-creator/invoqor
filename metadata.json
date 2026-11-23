@@ -1,0 +1,6 @@
+{
+  "name": "Klyra",
+  "description": "A dark iOS-style glassmorphism client proposal and invoice generator with live A4 preview, digital signature pad, templates, local history, and one-click PDF export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
