@@ -86,7 +86,11 @@ export const ThemeMenu: React.FC<ThemeMenuProps> = ({
         <div
           role="dialog"
           aria-label="Customize app background theme"
-          className="ui-modal-surface absolute right-0 mt-2.5 w-[276px] sm:w-[296px] rounded-2xl shadow-2xl p-4 z-50 space-y-3.5"
+          className={`fixed inset-x-4 top-16 mx-auto max-w-sm z-50 sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2.5 sm:mx-0 sm:w-[296px] sm:max-w-none rounded-2xl shadow-2xl p-4 space-y-3.5 border backdrop-blur-2xl ui-text-primary ${
+            isLightTheme
+              ? 'bg-white/95 border-slate-900/15'
+              : 'bg-[#121629]/95 border-white/15'
+          }`}
         >
           <div>
             <div className="text-xs font-semibold ui-text-primary">App Background Theme</div>
